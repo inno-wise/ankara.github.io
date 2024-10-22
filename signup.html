@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign Up Form</title>
+
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" type="text/css" href="signup.css">
+    
+</head>
+
+<body>
+    <div class="container mt-5">
+        <a href="HMS.html" class="btn btn-primary mb-3">Back to Landing Page</a>
+
+        <div class="text-center mb-4">
+            <legend>
+                <marquee behavior="scroll" direction="left">Welcome to Ankara Gardens - Sign Up Here!</marquee>
+            </legend>
+            <span style="color: #4caf50; font-weight: 800; font-size: 25px;">(We are delighted to have you here!)</span>
+        </div>
+
+        <div class="signupbox border p-4 rounded">
+            <form id="signupForm">
+                <legend class="text-center">
+                    <img id="userimage" src="image/user.png" alt="user" class="img-fluid mb-2" />
+                    <h2>SIGN UP FORM</h2>
+                </legend>
+
+                <div class="form-group">
+                    <label for="t1">Name:</label>
+                    <input type="text" id="t1" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label>Gender:</label>
+                    <div id="r1">
+                        <div class="form-check">
+                            <input type="radio" name="gender" value="Male" class="form-check-input">
+                            <label class="form-check-label">Male</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="gender" value="Female" class="form-check-input">
+                            <label class="form-check-label">Female</label>
+                        </div>
+                        <div class="form-check">
+                            <input type="radio" name="gender" value="Other" class="form-check-input">
+                            <label class="form-check-label">Other</label>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="t2">Email:</label>
+                    <input type="email" id="t2" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="p1">Enter Password:</label>
+                    <input type="password" id="p1" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="p2">Confirm Password:</label>
+                    <input type="password" id="p2" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="bod">Date Of Birth:</label>
+                    <input type="date" id="bod" class="form-control" required>
+                </div>
+
+                <div class="form-group">
+                    <label for="t4">Phone Number:</label>
+                    <input type="text" id="t4" class="form-control" required />
+                </div>
+
+                <div class="form-group">
+                    <label>User Image (optional):</label>
+                    <input type="file" id="if" class="form-control-file" accept="image/*" onchange="readURL(this);">
+                </div>
+
+                <div class="form-group">
+                    <label for="cap">Captcha:</label>
+                    <div id="captcha"></div>
+                    <input type="text" id="cap" class="form-control" required>
+                    <div id="msg">Captcha does not match!</div>
+                </div>
+
+                <div class="text-center">
+                    <button type="reset" class="btn btn-secondary" onclick="resetMessage()">Reset</button>
+                    <button type="submit" class="btn btn-primary">Sign Up</button>
+                </div>
+
+                <div class="text-center mt-3">
+                    <h5>Already a User?</h5>
+                    <a href="login.html">Login here</a>
+                </div>
+            </form>
+        </div>
+
+        <footer class="footer text-center">
+            <div class="container">
+                <p class="mb-1">&copy; 2024 Ankara Gardens. All rights reserved.</p>
+                <ul class="list-inline">
+                    <li class="list-inline-item">
+                        <a href="#">About Us</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Privacy Policy</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Terms of Service</a>
+                    </li>
+                    <li class="list-inline-item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+                <div>
+                    <a href="#" class="btn btn-outline-light btn-sm">
+                        <i class="fab fa-facebook-f"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-sm">
+                        <i class="fab fa-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-outline-light btn-sm">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <!-- Bootstrap JS and dependencies -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>

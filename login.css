@@ -1,0 +1,153 @@
+body
+{
+margin:0;
+padding: 0;
+/*background: url('images/Amazing.jpg');*/
+background-color: #f5f5dc;
+background-size:cover;
+font-family: sans-serif;
+
+}
+.loginbox
+{
+	position: absolute;
+	padding: 20px;
+	margin-top:3.2%;
+	margin-left:31.2%;
+	width:580px;
+	height:530px;
+	background:	#ffffff;
+border:2.5px solid #3c5d34;
+border-radius: 25px;
+box-shadow: 8px 12px 20px #333;
+
+}
+.user
+{
+	width: 50px;
+	height:50px;
+	margin-top:-50px;
+	margin-left:239px;
+	border-radius: 50px;
+border:2px solid black;
+overflow:hidden;
+background:#1aff8c;
+}
+
+legend
+	{
+	margin-right: auto;
+	margin-left: auto;
+	display: block;
+	font-size: 24px; /* Larger font size */
+	font-weight: bold; /* Bold text */
+	color: #007bff; /* Bootstrap primary color */
+	border-bottom: 2px solid #007bff; /* Bottom border */
+	padding-bottom: 10px; /* Space below the text */
+	margin-bottom: 20px; /* Space below the legend */
+	text-align: center; /* Center the text */
+
+}
+label
+{   font-size: 22px;
+	font-weight: bold;
+	color:#3c5d34;
+	
+	text-transform: uppercase;
+	margin-left: 15px;
+}
+h2
+{
+	padding: 0 0 20px;
+	text-align:center;
+	color:#3f812e;
+	font-family: arial;
+	font-size:28px;
+}
+input
+{
+	margin-bottom: 20px;
+	margin-left: 45%;
+ 
+ height: 35px;
+}
+.loginbox input[type="text"],.loginbox input[type="password"]
+{
+ height:35px;
+ width:75%;
+ margin-left:80px;
+ border:1.5px solid blue;
+ margin-bottom: 20px;
+ color:#3c5d34; 
+; #00cc66
+;purple;
+ background: #9ff789;
+ font-size: 22px;
+
+}
+.b1
+{
+	height:50px;
+	width:50%;
+	color:White;
+	font-size:15px;
+	background-color: #ffd700;
+	letter-spacing: 2px;
+	border-radius: 15px;
+cursor: pointer;
+}
+.b1:hover
+{  font-family: arial;
+	letter-spacing: 3px;
+font-size: 25px;
+background-color: #b8860b;
+box-shadow:10px 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,1);	
+}
+.loginbox a
+{  
+	color:#ffd700;;
+	text-decoration: none;
+	font-size: 25px;
+	letter-spacing: 0.6px;
+}
+a:hover
+{
+	font-size: 22px;
+}
+h1
+{
+	font-family: Rosewood Std;
+	font-size: 55px;
+	letter-spacing: 4px;
+
+
+}
+#dd
+{
+	border-radius: 10px;
+	height:35px;
+ width:75%;
+	border:1.5px solid blue;
+margin-left:80px;
+color:green;
+font-size: 20px;
+font-family: Verdana;
+background-color:rgba(255,0,0,0);
+}
+td{
+	padding-left: 15px;
+}
+
+/*footer*/
+.footer {
+	background-color: #343a40;
+	color: white;
+	margin-top: 800px;
+}
+.footer a {
+	color: white;
+	transition: color 0.3s;
+}
+.footer a:hover {
+	color: #eee4d6; /* Change this to your desired hover color */
+}
